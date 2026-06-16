@@ -4,8 +4,25 @@
   "description": "The ultimate 1000x advanced AI steering agent",
   "main": "index.js",
   "bin": {
-    "nova-agent": "./index.js"
+    "nova-agent": "index.js"
   },
   "author": "basak-works",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basak-works/Nova-Agent.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/basak-works/Nova-Agent/issues"
+  },
+  "homepage": "https://github.com/basak-works/Nova-Agent#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1"
+  }
 }
