@@ -1,0 +1,11 @@
+{
+  "name": "nova-agent",
+  "version": "1.0.0",
+  "description": "The ultimate 1000x advanced AI steering agent",
+  "main": "index.js",
+  "bin": {
+    "nova-agent": "./index.js"
+  },
+  "author": "basak-works",
+  "license": "MIT"
+}
