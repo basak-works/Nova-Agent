@@ -1,24 +1,22 @@
+#!/usr/bin/env node
 const fs = require('fs');
+const path = require('path');
 
-// Load Nova-Agent rules
 function loadRules() {
     try {
-        const rulesData = fs.readFileSync('./rules.json', 'utf8');
+        const rulesPath = path.join(__dirname, 'rules.json');
+        const rulesData = fs.readFileSync(rulesPath, 'utf8');
         return JSON.parse(rulesData);
     } catch (error) {
-        console.error("Error loading rules:", error);
         return null;
     }
 }
 
-// Intercept and optimize the prompt
 function generateSteeringPrompt(userPrompt) {
     const rules = loadRules();
     if (!rules) return userPrompt;
 
-    console.log(`[Nova-Agent v${rules.version}] Injecting Elite Directives...\n`);
-    
-    let injectedPrompt = `You are governed by ${rules.agent_name}. Follow these rules strictly:\n`;
+    let injectedPrompt = `You are governed by ${rules.agent_name} v${rules.version}. Follow these rules strictly:\n`;
     rules.core_directives.forEach((rule, index) => {
         injectedPrompt += `${index + 1}. ${rule}\n`;
     });
@@ -27,7 +25,7 @@ function generateSteeringPrompt(userPrompt) {
     return injectedPrompt;
 }
 
-// Test Run
-const sampleRequest = "Write a function to find the maximum number in an array.";
-console.log(generateSteeringPrompt(sampleRequest));
-
+const args = process.argv.slice(2);
+if (args.length > 0) {
+    console.log(generateSteeringPrompt(args.join(' ')));
+}
