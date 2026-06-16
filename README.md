@@ -1,21 +1,34 @@
 <div align="center">
-  <h1>🚀 Nova-Agent</h1>
-  <p><b>The Ultimate, 1000x Advanced Successor to AI Steering.</b></p>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=cyan&height=200&section=header&text=Nova-Agent&fontSize=70&fontAlignY=40&animation=twinkling" alt="Nova Banner" />
+  
+  <br />
+  
+  <img src="https://img.shields.io/badge/Version-v1.0.0-cyan?style=for-the-badge&logo=github" alt="Version" />
+  <img src="https://img.shields.io/badge/Speed-1000x_Faster-00c853?style=for-the-badge&logo=lightning" alt="Speed" />
+  <img src="https://img.shields.io/badge/Bloat-0%25-red?style=for-the-badge" alt="Bloat" />
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License" />
+
+  <h3>The AI Agent that COMMANDS, not asks.</h3>
 </div>
 
-> *Never write redundant code. Enforce Zero-Trust. Optimize automatically. Act as an Elite Senior Architect.*
+---
 
-Nova-Agent doesn't just ask the AI; it **commands** it. Instead of generating bloated, unsecured, and average code, your AI is forced to follow strict elite governance before outputting a single line. It's designed for developers who value performance and clean architecture.
+> *Ponytail walked so Nova-Agent could run. Welcome to the next generation of AI steering.*
 
-## 🔥 Why Nova-Agent?
-- **1000x Smarter:** Injects elite architectural directives into every prompt automatically.
-- **Zero Bloat:** Forces AI to use native platform features instead of heavy libraries.
-- **Aesthetic CLI:** Beautiful, animated terminal UI built with modern tooling.
-- **Time Saver:** Stop arguing with your AI about bad patterns. Nova-Agent fixes the architecture before the AI even starts typing.
+Nova-Agent doesn't just ask the AI; it **commands** it. Instead of generating bloated, unsecured, and average code, your AI is forced to follow strict elite governance before outputting a single line.
 
-## ⚡ Installation
+## 🚀 The Difference
 
-Clone the repository and link it globally to use it from anywhere in your terminal:
+| Feature | Normal AI / Ponytail | Nova-Agent 🌟 |
+|---------|----------------------|---------------|
+| **Security** | Trusts user inputs | **Zero-Trust Enforced** |
+| **Architecture** | Whatever is easiest | **Elite Senior Level** |
+| **Speed** | Standard / Slow | **Hyper-Optimized (O(1) / O(log n))** |
+| **Output UI** | Boring Text | **Animated, Cyberpunk CLI** |
+
+## ⚡ Installation & Quick Start
+
+Make sure you have Node.js installed, then run:
 
 ```bash
 git clone [https://github.com/basak-works/Nova-Agent.git](https://github.com/basak-works/Nova-Agent.git)
